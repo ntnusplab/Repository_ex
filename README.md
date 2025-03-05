@@ -26,7 +26,7 @@
 ```javascript
 repository.create({ name: "John", age: 30 });
 // repository 需改成自己物件名稱
-
+```
 ---
 
 ## getAll-取得所有資料
