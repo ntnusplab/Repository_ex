@@ -20,6 +20,8 @@
 - **語法：** `create(data)`
 - **參數：**
   - `data`：要新增的資料物件。
+- **格式：**
+  - _<repository物件名稱>_.create(_要存入的json格式資料_)
 - **範例：**
 
 ```javascript
