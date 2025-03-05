@@ -2,7 +2,7 @@
 
 這是一個使用 Sequelize ORM 的通用資料庫操作類別，提供基本的 CRUD 功能。
 
-## 📋 目錄
+## 📝 目錄
 
   - [create - 新增資料](#create-新增資料)
   - [getAll - 取得所有資料](#getall-取得所有資料)
@@ -20,12 +20,11 @@
 - **語法：** `create(data)`
 - **參數：**
   - `data`：要新增的資料物件。
-- **格式：**
-  - _<repository物件名稱>_.create(_要存入的json格式資料_)
 - **範例：**
 
 ```javascript
 repository.create({ name: "John", age: 30 });
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -38,6 +37,7 @@ repository.create({ name: "John", age: 30 });
 
 ```javascript
 repository.getAll();
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -53,6 +53,7 @@ repository.getAll();
 
 ```javascript
 repository.getKeyEqual("status", "active");
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -65,6 +66,7 @@ repository.getKeyEqual("status", "active");
 
 ```javascript
 repository.getKeyEqualLast5Min("status", "active");
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -77,6 +79,7 @@ repository.getKeyEqualLast5Min("status", "active");
 
 ```javascript
 repository.getKeyBetween("age", 20, 30);
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -89,6 +92,7 @@ repository.getKeyBetween("age", 20, 30);
 
 ```javascript
 repository.updateKeyEqual("name", "John", "age", 35);
+// repository 需改成自己檔案名稱
 ```
 
 ---
@@ -101,8 +105,10 @@ repository.updateKeyEqual("name", "John", "age", 35);
 
 ```javascript
 repository.deleteKeyEqual("status", "inactive");
+// repository 需改成自己檔案名稱
 ```
 
 ---
 
 **⚠️ 注意：** 請確保使用正確的模型結構和欄位名稱，以避免資料錯誤或遺失。
+
