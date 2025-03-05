@@ -20,6 +20,7 @@
 - **語法：** `create(data)`
 - **參數：**
   - `data`：要新增的資料物件。
+- **格式：** _Json檔案名稱_.create({需存入的json資料});
 - **範例：**
 
 ```javascript
@@ -33,6 +34,7 @@ repository.create({ name: "John", age: 30 });
 
 - **功能：** 取得資料表中所有資料。
 - **語法：** `getAll()`
+- **格式：** _Json檔案名稱_.getAll();
 - **範例：**
 
 ```javascript
@@ -46,6 +48,7 @@ repository.getAll();
 
 - **功能：** 查詢指定欄位等於某個值的資料。
 - **語法：** `getKeyEqual(key, value)`
+- **格式：** _Json檔案名稱_.getKeyEqual(欄位名稱, 查詢值);
 - **參數：**
   - `key`：欄位名稱。
   - `value`：查詢的值。
@@ -62,6 +65,7 @@ repository.getKeyEqual("status", "active");
 
 - **功能：** 查詢最近 5 分鐘內更新的資料。
 - **語法：** `getKeyEqualLast5Min(key, value)`
+- **格式：** _Json檔案名稱_.getKeyEqualLast5Min(欄位名稱, 查詢值);
 - **範例：**
 
 ```javascript
@@ -75,6 +79,7 @@ repository.getKeyEqualLast5Min("status", "active");
 
 - **功能：** 查詢某欄位的值介於特定範圍的資料。
 - **語法：** `getKeyBetween(key, start, end)`
+- **格式：** _Json檔案名稱_.getKeyBetween(欄位名稱, 起始值, 結束值);
 - **範例：**
 
 ```javascript
@@ -88,6 +93,7 @@ repository.getKeyBetween("age", 20, 30);
 
 - **功能：** 更新符合條件的資料。
 - **語法：** `updateKeyEqual(key, value, element, num)`
+- **格式：** _Json檔案名稱_.updateKeyEqual(欄位名稱, 條件值, 更新欄位, 更新值);
 - **範例：**
 
 ```javascript
@@ -101,6 +107,7 @@ repository.updateKeyEqual("name", "John", "age", 35);
 
 - **功能：** 刪除符合條件的資料。
 - **語法：** `deleteKeyEqual(key, value)`
+- **格式：** _Json檔案名稱_.deleteKeyEqual(欄位名稱, 刪除條件值);
 - **範例：**
 
 ```javascript
